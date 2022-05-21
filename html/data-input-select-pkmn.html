@@ -1,0 +1,53 @@
+<div class="input-section">
+	<h2>Choose data types to input:</h2>
+	{{content}}
+</div>
+<div class="input-section">
+	<h2>Default Tiers:</h2>
+	<label class="settings-input" for="default-tier-input"> Singles Tier: 
+		<input type="text" id="default-tier-input" value="{{tier}}"></input>
+	</label><br><br>
+	<label class="settings-input" for="default-doubles-tier-input"> Doubles Tier: 
+		<input type="text" id="default-doubles-tier-input" value="{{doublesTier}}"></input>
+	</label><br><br>
+	<div class="radio-section">
+		<label class="radio" for="radio-tier-all">
+			<div class="input-selection-row"> All Pokemon
+				<input type="radio" name="default-tier" id="radio-tier-all" {{all}}></input></br>
+			</div>
+		</label>
+		<label class="radio" for="radio-tier-fake">
+			<div class="input-selection-row"> Only Fakemons
+				<input type="radio" name="default-tier" id="radio-tier-fake" {{fake}}></input></br>
+			</div>
+		</label>
+		<label class="radio" for="radio-tier-none">
+			<div class="input-selection-row"> No Default Tier
+				<input type="radio" name="default-tier" id="radio-tier-none" {{none}}></input></br>
+			</div>
+		</label>
+	</div><br>
+	<label class="settings-input" for="dex-num-input"> Starting Dex #: 
+		<input type="number" id="dex-num-input" value="{{dexNum}}"></input>
+	</label><br>
+</div>
+<div class="input-section">
+	<h2>Input Style:</h2>
+	<div class="radio-section">
+		<label class="radio" for="radio-column-dex">
+			<div class="input-selection-row"> Column Input
+				<input type="radio" name="input" id="radio-column-dex" {{column}}></input></br>
+			</div>
+		</label>
+		<label class="radio" for="radio-single-dex">
+			<div class="input-selection-row"> Single Input
+				<input type="radio" name="input" id="radio-single-dex" {{single}}></input></br>
+			</div>
+		</label>
+	</div>
+</div>
+<div class="buttons">
+	<button type="button" id="home-button">Main Menu</button>
+	<button type="button" id="default-settings-button">Reset to Defaults</button>
+	<button type="button" id="input-settings-button">Enter Data</button>
+</div>
